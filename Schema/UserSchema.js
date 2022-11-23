@@ -10,5 +10,5 @@ autoIncrement.initialize(mongoose.connection)
 user.plugin(autoIncrement.plugin, 'user')
 
 const user = mongoose.model('user', userSchema)
-
+ 
 export default user
