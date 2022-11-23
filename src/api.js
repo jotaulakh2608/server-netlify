@@ -15,6 +15,6 @@ router.get('/data', (req, res)=>{
     res.send(dataApi)
 })
 
-app.use('/.netlify/functions/api', router)
+app.use('/api', router)
 module.exports= app
 module.exports.handler = ServerlessHttp(app)
