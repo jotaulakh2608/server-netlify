@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors');
 const dataApi = require('../data.json');
 const ServerlessHttp = require('serverless-http');
+const { default: router } = require('../Routes/UserRoute');
 app.use(cors())
 
 app.use('/.netlify/functions/api', router)
